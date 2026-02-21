@@ -196,23 +196,9 @@
 		"when": "editorHasSelection && editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "escape j",
-		"command": "workbench.action.openNextRecentlyUsedEditorInGroup",
-		"when": "textInputFocus && !suggestWidgetVisible && !findWidgetVisible"
-	},
-	{
-		"key": "insert",
-		"command": "workbench.action.openNextRecentlyUsedEditorInGroup",
-		"when": "textInputFocus && !suggestWidgetVisible "
-	},
-	{
 		"key": "j",
 		"command": "list.focusDown",
 		"when": "listFocus && !inputFocus"
-	},
-	{
-		"key": "ctrl+tab",
-		"command": "-workbench.action.openNextRecentlyUsedEditorInGroup"
 	},
 	{
 		"key": "ctrl+m",
@@ -312,5 +298,31 @@
 	{
 		"key": "ctrl+shift+b",
 		"command": "-workbench.action.tasks.build"
-	}
+	},
+	{
+		"key": "insert",
+		"command": "-editor.action.toggleOvertypeInsertMode"
+	},
+	{
+		"key": "insert",
+		"command": "workbench.action.openNextRecentlyUsedEditorInGroup"
+	},
+	{
+		"key": "insert",
+		"command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "escape g",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    }
 ]
