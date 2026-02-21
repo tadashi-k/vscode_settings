@@ -312,6 +312,11 @@
 		"command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
 		"when": "!activeEditorGroupEmpty"
 	},
+    {
+        "key": "insert",
+        "command": "workbench.action.closeQuickOpen",
+        "when": "inQuickOpen"
+    },
 	{
 		"key": "ctrl+tab",
 		"command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
@@ -324,5 +329,15 @@
     {
         "key": "ctrl+g",
         "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "escape",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible && !isComposing"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.closeQuickOpen",
+        "when": "inQuickOpen"
     }
 ]
